@@ -8,7 +8,7 @@ const Navbar = () => {
   const navbar__content = React.useRef<HTMLDivElement | null>(null)
   const navbar__content__fixed = React.useRef<HTMLDivElement | null>(null)
 
-  function verificarScroll(): void {
+  function verificarScroll() {
     const scrollAtual: number = document.documentElement.scrollTop;
 
     if (scrollAtual > valueScroll) {
@@ -28,25 +28,52 @@ const Navbar = () => {
 
   window.addEventListener('scroll', verificarScroll);
 
+  const url = document.documentElement.baseURI
+  const split_URL = url.split("/").slice(-1)
+  const [link, setLink] = React.useState<string | null>(null)
+
+  React.useEffect(() => {
+    setLink(String(split_URL))
+  }, [split_URL])
+
   return (
     <header className={style.navbar__container}>
       <div ref={navbar__content__relative} className={style.navbar__content__relative}>
         <div ref={navbar__content__fixed} className={style.navbar__content__fixed}>
           <div ref={navbar__content} className={style.navbar__content}>
             <figure className={style.navbar__figure__Icon}>
-              <img src={systech} className={style.navbar__icon}/>
+              <a href="/">
+                <img src={systech} className={style.navbar__icon}/>
+              </a>
             </figure>
 
             <nav className={style.navbar__nav}>
               <ul>
                 <li>
-                  <a href="">Saiba mais</a>
+                  {
+                    link === "saiba-mais" ?
+                    <a href="/saiba-mais" className={style.navbar__nav__active} >Saiba mais</a>
+                    :
+                    <a href="/saiba-mais" >Saiba mais</a>
+                  }
                 </li>
                 <li>
-                  <a href="/orcamento">Orçamento</a>
+                  {
+                    link === "metodo-pagamento" ?
+                    <a href="/metodo-pagamento" className={style.navbar__nav__active}>
+                      Orçamento
+                    </a>
+                    :
+                    <a href="/metodo-pagamento">Orçamento</a>
+                  }
                 </li>
                 <li>
-                  <a href="/suporte">Suporte</a>
+                  {
+                    link === "suporte" ?
+                    <a href="/suporte" className={style.navbar__nav__active}>Suporte</a>
+                    :
+                    <a href="/suporte">Suporte</a>
+                  }
                 </li>
               </ul>
             </nav>

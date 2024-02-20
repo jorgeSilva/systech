@@ -31,12 +31,12 @@
   grid-template-columns: repeat(12, 1fr);
   gap: var(--gap-s);
   padding-top: var(--gap-m);
+  transition: .3s ease;
 }
 
 .nav-active{
   grid-column: 2 / 12;
   padding: 1rem;
-
 }
 
 html {
