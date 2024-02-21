@@ -11,16 +11,18 @@ const Navbar = () => {
   function verificarScroll() {
     const scrollAtual: number = document.documentElement.scrollTop;
 
+    console.log(scrollAtual);
+    
+
     if (scrollAtual > valueScroll) {
+      // console.log('aumentou');
       navbar__content__relative.current?.classList.add('nav-active-relative')
       navbar__content.current?.classList.add('nav-active')
       navbar__content__fixed.current?.classList.add('nav-active-fixed')
-    } else if (scrollAtual < valueScroll) {
+    } else if (scrollAtual <= 1.6) {
       navbar__content__relative.current?.classList.remove('nav-active-relative')
       navbar__content.current?.classList.remove('nav-active')
-      navbar__content__fixed.current?.classList.remove('nav-active-fixed')
-    } else {
-        console.log('O scroll não mudou.');
+      navbar__content__fixed.current?.classList.remove('nav-active-fixed')      
     }
 
     setValueScroll(scrollAtual)
