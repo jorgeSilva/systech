@@ -565,6 +565,24 @@
     left: 64%;
     width: 5.5rem;
   }
+  
+  .home__social__medias__content a{
+    cursor: pointer;
+    animation-duration: 3.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+    background: var(--c3);
+    padding: .5rem ;
+    background: linear-gradient(to right, var(--c9) 8%, var(--c10) 18%, #F6F6F6 33%);
+    background-size: 1200px 100%;
+    border-radius: .5rem;
+    border: none;
+    color: var(--p5);
+    fill: var(--p5);
+    transition: .3s ease;
+  }
 }
 
 @media (max-width: 649px) {

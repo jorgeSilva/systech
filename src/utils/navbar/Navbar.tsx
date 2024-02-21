@@ -10,10 +10,7 @@ const Navbar = () => {
 
   function verificarScroll() {
     const scrollAtual: number = document.documentElement.scrollTop;
-
-    console.log(scrollAtual);
     
-
     if (scrollAtual > valueScroll) {
       // console.log('aumentou');
       navbar__content__relative.current?.classList.add('nav-active-relative')
@@ -37,6 +34,10 @@ const Navbar = () => {
   React.useEffect(() => {
     setLink(String(split_URL))
   }, [split_URL])
+
+  function handleContato(){
+    window.location.href = "https://wa.me/5515997886834"
+  }
 
   return (
     <header className={style.navbar__container}>
@@ -80,7 +81,7 @@ const Navbar = () => {
               </ul>
             </nav>
             
-            <button className={style.navbar__button}>
+            <button onClick={handleContato} className={style.navbar__button}>
               Entrar em contato
             </button>
           </div>

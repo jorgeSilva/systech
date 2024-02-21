@@ -8,6 +8,11 @@ import twitter from '../../assets/Icon/twitter.svg'
 import whatsapp from '../../assets/Icon/whatsapp.svg'
 
 function Home() {
+
+  function handleContato(){
+    window.location.href = "https://wa.me/5515997886834"
+  }
+
   return (
     <main className={style.home__container__main}>
       <section className={style.home__content__main}>
@@ -24,7 +29,7 @@ function Home() {
 
         <h2 className={style.home__h2}>Seu futuro digital começa aqui.</h2>
 
-        <button className={style.home__button__contato}>Entrar em contato</button>
+        <button onClick={handleContato} className={style.home__button__contato}>Entrar em contato</button>
 
         <div className={style.home__social__medias__container}>
           <p>Redes sociais</p>
@@ -33,7 +38,7 @@ function Home() {
             <a href="https://www.instagram.com/_systech/">
               <img className={style.home__social__media} src={insta} alt="instagram SysTech" />
             </a>
-            <a href="">
+            <a href="/">
               <img className={style.home__social__media} src={twitter} alt="twitter SysTech" />
             </a>
             <a href="https://wa.me/5515997886834">
