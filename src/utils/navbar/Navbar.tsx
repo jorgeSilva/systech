@@ -45,7 +45,7 @@ const Navbar = () => {
           <div ref={navbar__content} className={style.navbar__content}>
             <figure className={style.navbar__figure__Icon}>
               <a href="/">
-                <img src={systech} className={style.navbar__icon}/>
+                <img src={systech} alt='Logo "SysTech"' className={style.navbar__icon}/>
               </a>
             </figure>
 
