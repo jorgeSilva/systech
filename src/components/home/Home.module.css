@@ -57,6 +57,10 @@
   }
 }
 
+.home__container__blob__main{
+  display: none;
+}
+
 .home__h2{
   min-width: 15ch;
   color: var(--p1);
@@ -198,7 +202,7 @@
 
 .home__iphone{
   position: absolute;
-  width: 87px;
+  width: 5.4rem;
   left: 62%;
   top: 50%;
   transform: translateY(-65%);
@@ -237,5 +241,575 @@
   100%{
     opacity: 1;
     transform: translateY(initial) scale(1);
+  }
+}
+
+@media (max-width: 1607px) {
+  .home__iphone{
+    left: 59%;
+  }
+}
+
+@media (max-width: 1560px) {
+  .home__iphone{
+    left: 62%;
+  }
+}
+
+
+@media (max-width: 1507px) {
+  .home__iphone{
+    left: 65%;
+  }
+}
+
+@media (max-width: 1445px) {
+  .home__iphone{
+    left: 67%;
+  }
+}
+
+@media (max-width: 1405px) {
+  .home__blob{
+    width: 110%;
+  }
+
+  .home__iphone{
+    left: 70%;
+  }
+}
+
+@media (max-width: 1340px) {
+  .home__iphone{
+    left: 73%;
+  }
+}
+
+@media (max-width: 1305px) {
+  .home__iphone{
+    left: 75%;
+  }
+}
+
+@media (max-width: 1267px) {
+  .home__h1{
+    min-width: 22ch;
+    font-size: 3.25rem;
+    line-height: 3.25rem;
+  }
+  
+  .home__h3{
+    font-size: 1.75em;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .home__h2{
+    min-width: 15ch;
+    font-size: 3.25em;
+    font-weight: 600;
+    line-height: 3rem;
+  }
+
+  .home__blob{
+    width: 120%;
+    margin-left: 1rem;
+  }
+
+
+  .home__iphone{
+    left: 78%;
+  }
+}
+
+@media (max-width: 1232px) {
+  .home__iphone{
+    left: 80%;
+  }
+}
+
+@media (max-width: 1205px) {
+  .home__blob{
+    margin-left: 1rem;
+  }
+
+  .home__mac{
+    left: -12%;
+    width: 350px;
+  }
+  
+  .home__iphone{
+    left: 83%;
+  }
+}
+
+@media (max-width: 1147px) {
+  .home__h1{
+    min-width: 22ch;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  
+  .home__h3{
+    font-size: 1.5em;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .home__h2{
+    min-width: 15ch;
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 2.75rem;
+  }
+
+  .home__mac{
+    left: -15%;
+    width: 350px;
+  }
+}
+
+@media (max-width: 1147px) {
+  .home__mac{
+    left: -17%;
+    width: 350px;
+  }
+}
+
+@media (max-width: 1147px) {
+  .home__mac{
+    left: -17%;
+    width: 350px;
+  }
+
+  .home__iphone{
+    left: 86%;
+  }
+}
+
+@media (max-width: 1058px) {
+  .home__h1{
+    min-width: 22ch;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+  
+  .home__h3{
+    font-size: 1.25em;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .home__h2{
+    min-width: 15ch;
+    font-size: 2.75em;
+    font-weight: 600;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 1070px) {
+  .home__mac{
+    left: -20%;
+    width: 350px;
+  }
+
+  .home__iphone{
+    left: 86%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .home__mac{
+    left: -23%;
+    width: 350px;
+  }
+
+  .home__iphone{
+    left: 87%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .home__mac{
+    left: -15%;
+    width: 300px;
+  }
+
+  .home__iphone{
+    left: 84%;
+    width: 4.75rem;
+  }
+}
+
+@media (max-width: 954px) {
+  .home__h1{
+    min-width: 22ch;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  
+  .home__h3{
+    font-size: 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .home__h2{
+    min-width: 15ch;
+    font-size: 2.5em;
+    font-weight: 600;
+    line-height: 2.25rem;
+  }
+
+  .home__mac{
+    left: -17%;
+    width: 300px;
+  }
+
+  .home__iphone{
+    left: 84%;
+    width: 4.75rem;
+  }
+}
+
+@media (max-width: 935px) {
+  .home__mac{
+    left: -17%;
+    width: 300px;
+  }
+
+  .home__iphone{
+    left: 86%;
+    width: 4.75rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .home__container__main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    height: auto;
+    margin: 4rem 0;
+  }
+  
+  .home__content__main{
+    grid-column: 2 / 12;
+  }
+
+  .home__container__blob{
+    display: none;
+   }
+
+  .home__container__blob__main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .home__content__blob{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home__blob{
+    margin-left: 1rem;
+    width: 80%;
+  }
+
+  .home__mac{
+    left: 2%;
+    width: 350px;
+  }
+  
+  .home__iphone{
+    left: 61%;
+    width: 5.5rem;
+  }
+}
+
+@media (max-width: 732px) {
+  .home__mac{
+    left: 0%;
+    width: 350px;
+  }
+}
+
+@media (max-width: 732px) {
+  .home__mac{
+    left: -2%;
+    width: 350px;
+  }
+  
+  .home__iphone{
+    left: 61%;
+    width: 5.5rem;
+  }
+}
+
+@media (max-width: 689px) {
+  .home__mac{
+    left: -2%;
+    width: 350px;
+  }
+  
+  .home__iphone{
+    left: 64%;
+    width: 5.5rem;
+  }
+}
+
+@media (max-width: 649px) {
+  .home__mac{
+    left: 2%;
+    width: 300px;
+  }
+  
+  .home__iphone{
+    left: 61%;
+    width: 4.75rem;
+  }
+}
+
+@media (max-width: 604px) {
+  .home__mac{
+    left: -2%;
+    width: 300px;
+  }
+}
+
+@media (max-width: 577px) {
+  .home__h1{
+    min-width: 22ch;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  
+  .home__h3{
+    font-size: 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .home__h2{
+    min-width: 15ch;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+
+  .home__mac{
+    left: -2%;
+    width: 300px;
+  }
+  
+  .home__iphone{
+    left: 64%;
+    width: 4.75rem;
+  }
+}
+
+@media (max-width: 555px) {
+  .home__mac{
+    left: -4%;
+    width: 300px;
+  }
+  
+  .home__iphone{
+    left: 65%;
+    width: 4.75rem;
+  }
+}
+
+@media (max-width: 533px) {
+  .home__mac{
+    left: 0%;
+    width: 280px;
+  }
+  
+  .home__iphone{
+    left: 67%;
+    width: 4.25rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .home__mac{
+    left: -2%;
+    width: 280px;
+  }
+  
+  .home__iphone{
+    left: 68%;
+    width: 4.25rem;
+  }
+}
+
+@media (max-width: 495px) {
+  .home__mac{
+    left: -4%;
+    width: 270px;
+  }
+  
+  .home__iphone{
+    left: 66%;
+    width: 4.1rem;
+  }
+}
+
+@media (max-width: 478px) {
+  .home__h1{
+    min-width: 17ch;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  
+  .home__h3{
+    font-size: 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .home__h2{
+    min-width: 15ch;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+
+  .home__mac{
+    left: -4%;
+    width: 250px;
+  }
+  
+  .home__iphone{
+    left: 66%;
+    width: 4rem;
+  }
+}
+
+@media (max-width: 448px) {
+  .home__mac{
+    left: 0%;
+    width: 220px;
+  }
+  
+  .home__iphone{
+    left: 64%;
+    width: 3.5rem;
+  }
+}
+
+@media (max-width: 429px) {
+  .home__mac{
+    left: -2%;
+    width: 220px;
+  }
+  
+  .home__iphone{
+    left: 65%;
+    width: 3.5rem;
+  }
+}
+
+@media (max-width: 409px) {
+  .home__mac{
+    left: -4%;
+    width: 220px;
+  }
+  
+  .home__iphone{
+    left: 66%;
+    width: 3.5rem;
+  }
+}
+
+@media (max-width: 392px) {
+  .home__mac{
+    left: -4%;
+    width: 220px;
+  }
+  
+  .home__iphone{
+    left: 69%;
+    width: 3.5rem;
+  }
+}
+
+@media (max-width: 377px) {
+  .home__h1{
+    min-width: 17ch;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  
+  .home__h3{
+    font-size: .9rem;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .home__h2{
+    min-width: 15ch;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+
+  .home__mac{
+    left: -1%;
+    width: 200px;
+  }
+  
+  .home__iphone{
+    left: 69%;
+    width: 3.25rem;
+  }
+}
+
+@media (max-width: 392px) {
+  .home__mac{
+    left: -4%;
+    width: 200px;
+  }
+  
+  .home__iphone{
+    left: 69%;
+    width: 3.25rem;
+  }
+}
+
+@media (max-width: 347px) {
+  .home__mac{
+    left: 0%;
+    width: 180px;
+  }
+  
+  .home__iphone{
+    left: 72%;
+    width: 3rem;
+  }
+}
+
+@media (max-width: 318px) {
+  .home__mac{
+    left: -3%;
+    width: 180px;
+  }
+  
+  .home__iphone{
+    left: 72%;
+    width: 2.9rem;
   }
 }

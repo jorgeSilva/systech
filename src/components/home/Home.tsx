@@ -13,6 +13,15 @@ function Home() {
       <section className={style.home__content__main}>
         <h1 className={style.home__h1}>Desenvolvimento de software para potencializar seu negocio.</h1>
         <h3 className={style.home__h3}>Transformando ideias em soluções.</h3>
+
+        <figure className={style.home__container__blob__main}>
+          <div className={style.home__content__blob}>
+            <img className={style.home__blob} src={blob} alt="conteudo laranja que abrange as imagens" />
+            <img className={style.home__mac} src={mac} alt="Laptop de exemplo." />
+            <img className={style.home__iphone} src={iphone} alt="Celular de exemplo." />
+          </div>
+        </figure>
+
         <h2 className={style.home__h2}>Seu futuro digital começa aqui.</h2>
 
         <button className={style.home__button__contato}>Entrar em contato</button>
