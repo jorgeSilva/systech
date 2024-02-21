@@ -1,6 +1,6 @@
 import React from 'react'
 import style from  './Navbar.module.css'
-import systech from '../../assets/Icon/SysTech.png'
+import systech from '../../assets/home/SysTech.png'
 
 const Navbar = () => {
   const [valueScroll, setValueScroll] = React.useState<number>(0)
