@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div style={{backgroundColor:'var(--p3)', height:'200px'}}>Footer</div>
   )
 }
 
