@@ -1,0 +1,112 @@
+.footer__container{
+  background-color: var(--c14);
+  color: var(--c0);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+}
+
+.footer__content{
+  gap: 4rem;
+  grid-column: 2 / 12;
+  grid-row: 1;
+  display: flex;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.footer__list__container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+}
+
+ul li{
+  list-style: circle;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li a{
+  text-decoration: none;
+  color: var(--c8);
+  font-size: .8rem;
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+.li a{
+  margin: 0;
+}
+
+.li div{
+  margin-bottom: .5rem;
+}
+
+ul li div {
+  color: var(--c9);
+  font-size: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+ul li a span img {
+  width: 1rem;
+  height: 1rem;
+  color: var(--c4);
+  fill: var(--c4);
+  transition: .3s ease;
+  text-decoration: none;
+  margin: 0 .5rem;
+}
+
+ul li a span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c4);
+  fill: var(--c4);
+}
+
+.footer__h1{
+  font-size: .75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer__list__container span{
+  font-family: 'GFS Didot', serif;
+}
+
+/* Imagem rodape */
+
+.footer__img__systech{
+  padding: 1rem;
+  grid-row: 2;
+  grid-column: 1 / -1;
+}
+
+.footer__img{
+  width: 100%; 
+}
+
+.footer__direitos__reservados{
+  font-family: 'GFS Didot', serif;
+  font-size: .85rem;
+  text-align: center; 
+  margin: 2rem;
+  grid-column: 1 / -1;
+  grid-row: 3;
+}
+
+@media (max-width: 467px) {
+  
+}
