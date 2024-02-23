@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .saiba__title{
@@ -84,4 +85,445 @@
 
 .saiba__card__blob__conteudo{
   width: 80%;
+}
+
+.fade__left{
+  animation: fade-left .5s forwards ;
+  z-index: -1;
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(200px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.fade__right{
+  animation: fade-right .5s forwards ;
+  z-index: -1;
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.device11{
+  position: absolute;
+  filter: drop-shadow(10px 20px 20px #000000bd);
+}
+
+.device12{
+  position: absolute; 
+  filter: drop-shadow(10px 20px 20px #000000bd);
+}
+
+.device4{
+  position: absolute;
+  height: 80%;
+  left: 2rem;
+}
+
+@media (min-width: 1607px ) {
+  .device11{
+    left: 10rem;
+    height: 80%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 20.5rem;
+    height: 80%;
+  }
+}
+
+@media (max-width: 1607px ) {
+  .device11{
+    left: 9rem;
+    height: 85%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 18rem;
+    height: 85%;
+  }
+}
+
+@media (max-width: 1524px ) {
+  .device11{
+    left: 7rem;
+    height: 85%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 17rem;
+    height: 85%;
+  }
+
+  .saiba__card__blob{
+    width: 80%;
+  }
+}
+
+@media (max-width: 1415px ) {
+  .device11{
+    left: 7rem;
+    height: 85%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 16rem;
+    height: 85%;
+  }
+
+  .saiba__card__blob{
+    width: 80%;
+  }
+}
+
+@media (max-width: 1330px ) {
+  .device11{
+    left: 7rem;
+    height: 80%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 15rem;
+    height: 80%;
+  }
+
+  .saiba__card__blob{
+    width: 80%;
+  }
+}
+
+@media (max-width: 1220px ) {
+  .device11{
+    left: 6rem;
+    height: 80%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 13rem;
+    height: 80%;
+  }
+
+  .saiba__card__blob{
+    width: 80%;
+  }
+}
+
+@media (max-width: 1034px ) {
+  .device11{
+    left: 5rem;
+    height: 75%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 11rem;
+    height: 75%;
+  }
+
+  .saiba__card__blob{
+    width: 80%;
+  }
+
+  .saiba__title{
+    font-size: 1rem;
+  }
+  
+  .saiba__conteudo{
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+  
+  .saiba__text__cliente{
+    font-size: 1rem;
+  }
+  
+  .saiba__img__whatsapp{
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media (max-width: 910px ) {
+  .device11{
+    left: 5rem;
+    height: 75%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 10rem;
+    height: 75%;
+  }
+
+  .saiba__card__blob{
+    width: 80%;
+  }
+}
+
+@media (max-width: 854px ) {
+  .saiba__content__card{
+    grid-column: 2 / 12;
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  .saiba__card__blob{
+    height: 80%;
+  }
+
+  .saiba__card__blob__conteudo{
+    height: 80%;
+  }
+
+  .device11{
+    left: 13rem;
+    height: 65%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 22rem;
+    height: 65%;
+  }
+
+  .device4{
+    position: absolute;
+    height: 50%;
+    left: 25%;
+  }
+  
+  .saiba__card__left{
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  
+  .saiba__card__right{
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .saiba__card__left__conteudo{
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  
+  .saiba__card__right__conteudo{
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 784px ) {
+  .device11{
+    left: 11rem;
+    height: 65%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 20rem;
+    height: 65%;
+  }
+}
+
+@media (max-width: 784px ) {
+  .device11{
+    left: 9rem;
+    height: 65%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 17rem;
+    height: 65%;
+  }
+}
+
+@media (max-width: 647px ) {
+  .device4{
+    position: absolute;
+    height: 50%;
+    left: 22%;
+  }
+}
+
+@media (max-width: 610px ) {
+  .device11{
+    left: 7rem;
+    height: 65%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 14rem;
+    height: 65%;
+  }
+}
+
+@media (max-width: 555px ) {
+  .device4{
+    position: absolute;
+    height: 45%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 510px ) {
+  .device11{
+    left: 7rem;
+    height: 65%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 12.5rem;
+    height: 65%;
+  }
+}
+
+@media (max-width: 476px ) {
+  .saiba__content__card{
+    grid-column: 1 / -1;
+    margin: 0 20px;
+  }
+  .saiba__title{
+    font-size: .85rem;
+  }
+  
+  .saiba__conteudo{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .saiba__text__cliente{
+    font-size: .85rem;
+  }
+}
+
+@media (max-width: 459px ) {
+  .device11{
+    left: 6rem;
+    height: 65%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 11rem;
+    height: 65%;
+  }
+}
+
+@media (max-width: 429px ) {
+  .device4{
+    position: absolute;
+    height: 40%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 410px ) {
+  .saiba__title{
+    font-size: .8rem;
+  }
+  
+  .saiba__conteudo{
+    font-size: 1.45rem;
+    line-height: 1.45rem;
+  }
+
+  .saiba__text__cliente{
+    font-size: .8rem;
+  }
+
+  .saiba__card__blob{
+    width: 90%;
+  }
+
+  .device11{
+    left: 5rem;
+    height: 65%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 10rem;
+    height: 65%;
+  }
+}
+
+@media (max-width: 372px ) {
+  .saiba__title{
+    font-size: .75rem;
+  }
+  
+  .saiba__conteudo{
+    font-size: 1.35rem;
+    line-height: 1.35rem;
+  }
+
+  .saiba__text__cliente{
+    font-size: .75rem;
+  }
+
+  .saiba__card__blob{
+    width: 100%;
+  }
+
+  .device11{
+    left: 4rem;
+    height: 65%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 9rem;
+    height: 65%;
+  }
+}
+
+@media (max-width: 348px ) {
+  .saiba__card__blob{
+    width: 100%;
+  }
+
+  .device11{
+    left: 3rem;
+    height: 65%;
+  }
+  
+  .device12{
+    position: absolute; 
+    left: 7.75rem;
+    height: 65%;
+  }
+  .device4{
+    position: absolute;
+    height: 38%;
+    left: 18%;
+  }
 }

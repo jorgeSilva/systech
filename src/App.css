@@ -36,7 +36,6 @@
 
 .nav-active{
   grid-column: 2 / 12;
-  padding: 1rem;
 }
 
 html {

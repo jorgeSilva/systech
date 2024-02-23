@@ -10,6 +10,14 @@
   padding-top: var(--gap-m);
 }
 
+@media (max-width: 349px) {
+  .navbar__content__relative{
+    grid-column: 1 / -1;
+    padding-top: var(--gap-m);
+    margin: 0 20px;
+  }
+}
+
 .navbar__content{
   display: flex;
   align-items: center;
@@ -123,7 +131,7 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-row-gap: 1rem;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem;
   }
 
   .navbar__nav{
