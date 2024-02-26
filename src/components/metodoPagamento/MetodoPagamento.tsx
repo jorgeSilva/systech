@@ -62,22 +62,35 @@ const MetodoPagamento = () => {
       </section>
 
       <section className={style.pagamento__container__form}>
-        <form onSubmit={sendEmail}>
-          <label>
-            Nome
-            <input onChange={(e) => setNome(e.target.value)} value={name} type="text" required/>
+        <form onSubmit={sendEmail} className={style.pagamento__form}>
+          <label className={style.pagamento__label__content}>
+            Nome:
+            <input className={style.pagamento__input} onChange={(e) => setNome(e.target.value)} value={name} type="text" required/>
           </label>
 
-          <label>
-            Email
-            <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" required/>
+          <label className={style.pagamento__label__content}>
+            Email: 
+            <input className={style.pagamento__input} onChange={(e) => setEmail(e.target.value)} value={email} type="email" required/>
           </label>
 
-          <label>
-            Conteudo
-            <textarea onChange={(e) => setConteudo(e.target.value)} value={message} required/>
+          <label className={style.pagamento__label__content}>
+            Mensagem:
+            <textarea className={style.pagamento__textarea} onChange={(e) => setConteudo(e.target.value)} value={message} required/>
           </label>
-          <input type='submit' value='Enviar'/>
+
+          <div className={style.pagamento__button__content}>
+            <input 
+              className={style.pagamento__button__cancel}
+              type='button' 
+              value='Cancelar'
+              onClick={() => { 
+                setConteudo('') 
+                setEmail('')
+                setNome('')
+              }} 
+            />
+            <input className={style.pagamento__button__submit} type='submit' value='Enviar'/>
+          </div>
         </form>
       </section>
     </main>
