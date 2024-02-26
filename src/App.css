@@ -68,3 +68,37 @@ html {
   --gap-m: 1rem;
   --gap-s: .5rem;
 }
+
+.fade__left{
+  animation: fade-left .5s forwards ;
+  z-index: -1;
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(200px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.fade__right{
+  animation: fade-right .5s forwards ;
+  z-index: -1;
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}

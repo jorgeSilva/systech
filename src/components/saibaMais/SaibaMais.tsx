@@ -13,11 +13,32 @@ import whatsapp from '../../assets/Icon/whatsapp.svg'
 const SaibaMais = () => {
 
   const terceiro_elemento = React.useRef<HTMLElement | null>(null)
+  const quarto_elemento = React.useRef<HTMLElement | null>(null)
 
-  // document.addEventListener('scroll', () => {
-  //   // console.log(terceiro_elemento.current?.scrollHeight);
-  //   console.log(window.scrollY);
-  // })  
+  document.addEventListener('scroll', () => {
+    let valor_terceiro = terceiro_elemento.current?.scrollHeight
+    let valor_quarto = quarto_elemento.current?.scrollHeight
+
+    console.log(valor_quarto);
+    console.log(valor_terceiro);
+    
+
+    if(valor_terceiro){
+      let meio_valor = valor_terceiro / 2
+
+      if(window.scrollY >= meio_valor){
+        terceiro_elemento.current?.classList.add('fade__left')
+      }
+    }
+
+    if(valor_quarto){
+      let meio_valor = valor_quarto * 1.5
+
+      if(window.scrollY >= meio_valor){
+        quarto_elemento.current?.classList.add('fade__right')
+      }
+    }
+  })  
 
   return (
     <section className={style.saiba__container}>
@@ -49,7 +70,7 @@ const SaibaMais = () => {
         </div>
       </section>
 
-      <section ref={terceiro_elemento} className={`${style.saiba__content__card} ${style.fade__left}`}>
+      <section ref={terceiro_elemento} className={`${style.saiba__content__card}`}>
         <div className={style.saiba__card__left}>
           <h2 className={style.saiba__title}>"<span>Campanha Pesquisa</span>"</h2>
           <h1 className={style.saiba__conteudo}>
@@ -65,7 +86,7 @@ const SaibaMais = () => {
         </div>
       </section>
 
-      <section className={`${style.saiba__content__card} ${style.fade__right}`}>
+      <section ref={quarto_elemento} className={`${style.saiba__content__card}`}>
         <div className={style.saiba__card__left__conteudo}>
           <h2 className={style.saiba__title}>"<span>Secretaria Almoxarifado</span>"</h2>
           <h1 className={style.saiba__conteudo}>

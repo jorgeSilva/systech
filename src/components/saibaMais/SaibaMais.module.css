@@ -8,6 +8,7 @@
   grid-column: 2 / 12;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  opacity: 0;
 }
 
 .saiba__card__left{
