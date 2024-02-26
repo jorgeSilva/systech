@@ -9,6 +9,8 @@ const MetodoPagamento = () => {
   const [name, setNome] = React.useState<string>('')
   const [email, setEmail] = React.useState<string>('')
   const [message, setConteudo] = React.useState<string>('')
+  const [enviado, setEnviado] = React.useState<boolean>(false)
+  const [messageSend, setMessageSend] = React.useState<boolean>(false)
 
   function handleContato(){
     window.location.href = "https://wa.me/5515997886834"
@@ -25,7 +27,9 @@ const MetodoPagamento = () => {
 
     emailjs.send("service_idf68af", "template_730vty8", templateParams, "XxTehvC__gXcnJ3rX")
       .then((r) => {
-        console.log("Email enviado", r.status, r.text);
+        setEnviado(true)
+        setMessageSend(true)
+        localStorage.setItem('emailEnviado', `${r.text}`)
         setConteudo('')
         setEmail('')
         setNome('')
@@ -33,6 +37,21 @@ const MetodoPagamento = () => {
         console.log("ERRO: ", e);
       })
   }
+
+  React.useEffect(() => {
+    const item =  localStorage.getItem('emailEnviado')
+
+    if(item){
+      setTimeout(() => {
+        setEnviado(false)
+        localStorage.removeItem('emailEnviado')
+      }, 60000);
+
+      setTimeout(() => {
+        setMessageSend(false)
+      }, 10000);
+    }
+  }, [enviado])
 
   return (
     <main className={style.pagamento__container__main}>
@@ -78,18 +97,47 @@ const MetodoPagamento = () => {
             <textarea className={style.pagamento__textarea} onChange={(e) => setConteudo(e.target.value)} value={message} required/>
           </label>
 
+          {
+            messageSend &&
+            <p className={style.pagamento__message__send}>*Enviado com sucesso*</p>
+          }
+
           <div className={style.pagamento__button__content}>
-            <input 
-              className={style.pagamento__button__cancel}
-              type='button' 
-              value='Cancelar'
-              onClick={() => { 
-                setConteudo('') 
-                setEmail('')
-                setNome('')
-              }} 
-            />
-            <input className={style.pagamento__button__submit} type='submit' value='Enviar'/>
+            {
+              enviado ?
+              <>
+                <input 
+                className={style.pagamento__button__cancel}
+                type='button' 
+                value='Cancelar'
+                onClick={() => { 
+                  setConteudo('') 
+                  setEmail('')
+                  setNome('')
+                }} 
+                />
+                <input onClick={() => {
+                  alert('Deve esperar 1 minuto para enviar outro email.')
+                  setConteudo('') 
+                  setEmail('')
+                  setNome('')
+                }} className={style.pagamento__button__submit__disabled} type='button' value='Enviar'/>
+              </>
+              :
+              <>
+                <input 
+                  className={style.pagamento__button__cancel}
+                  type='button' 
+                  value='Cancelar'
+                  onClick={() => { 
+                    setConteudo('') 
+                    setEmail('')
+                    setNome('')
+                  }} 
+                />
+                <input className={style.pagamento__button__submit} type='submit' value='Enviar'/>
+              </>
+            }
           </div>
         </form>
       </section>

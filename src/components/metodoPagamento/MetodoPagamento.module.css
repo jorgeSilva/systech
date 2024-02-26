@@ -191,7 +191,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: 1rem 0 2rem 0;
+  margin: .5rem 0 2rem 0;
 }
 
 .pagamento__button__submit{
@@ -206,6 +206,22 @@
   color: var(--c0);
   outline: none;
   border: 2px solid var(--c0);
+  cursor: pointer;
+}
+
+.pagamento__button__submit__disabled{
+  background-color: var(--c8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--c0);
+  outline: none;
+  border: 2px solid var(--c8);
+  cursor: wait;
 }
 
 .pagamento__button__cancel{
@@ -220,6 +236,12 @@
   color: var(--p3);
   outline: none;
   border: 2px solid var(--p3);
+}
+
+.pagamento__message__send{
+  color: rgb(24, 205, 24);
+  font-weight: 600;
+  margin: .5rem;
 }
 
 @media (max-width: 1360px) {
