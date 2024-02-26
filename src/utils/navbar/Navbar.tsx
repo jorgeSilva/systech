@@ -8,24 +8,24 @@ const Navbar = () => {
   const navbar__content = React.useRef<HTMLDivElement | null>(null)
   const navbar__content__fixed = React.useRef<HTMLDivElement | null>(null)
 
-  function verificarScroll() {
-    const scrollAtual: number = document.documentElement.scrollTop;
+  // function verificarScroll() {
+  //   const scrollAtual: number = document.documentElement.scrollTop;
     
-    if (scrollAtual > valueScroll) {
-      // console.log('aumentou');
-      navbar__content__relative.current?.classList.add('nav-active-relative')
-      navbar__content.current?.classList.add('nav-active')
-      navbar__content__fixed.current?.classList.add('nav-active-fixed')
-    } else if (scrollAtual <= 1.6) {
-      navbar__content__relative.current?.classList.remove('nav-active-relative')
-      navbar__content.current?.classList.remove('nav-active')
-      navbar__content__fixed.current?.classList.remove('nav-active-fixed')      
-    }
+  //   if (scrollAtual > valueScroll) {
+  //     // console.log('aumentou');
+  //     navbar__content__relative.current?.classList.add('nav-active-relative')
+  //     navbar__content.current?.classList.add('nav-active')
+  //     navbar__content__fixed.current?.classList.add('nav-active-fixed')
+  //   } else if (scrollAtual <= 1.6) {
+  //     navbar__content__relative.current?.classList.remove('nav-active-relative')
+  //     navbar__content.current?.classList.remove('nav-active')
+  //     navbar__content__fixed.current?.classList.remove('nav-active-fixed')      
+  //   }
 
-    setValueScroll(scrollAtual)
-  }
+  //   setValueScroll(scrollAtual)
+  // }
 
-  window.addEventListener('scroll', verificarScroll);
+  // window.addEventListener('scroll', () => {});
 
   const url = document.documentElement.baseURI
   const split_URL = url.split("/").slice(-1)
