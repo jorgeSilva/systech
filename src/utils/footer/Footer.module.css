@@ -28,7 +28,7 @@ ul li{
   flex-direction: column;
 }
 
-ul li a{
+.footer__list__container ul li a{
   text-decoration: none;
   color: var(--c8);
   font-size: .8rem;

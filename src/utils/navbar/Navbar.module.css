@@ -3,6 +3,7 @@
   grid-template-columns: repeat(12, 1fr);
   justify-content: space-around;
   gap: var(--gap-s);
+  margin-bottom: 2rem;
 }
 
 .navbar__content__relative{
@@ -14,7 +15,7 @@
   .navbar__content__relative{
     grid-column: 1 / -1;
     padding-top: var(--gap-m);
-    margin: 0 20px;
+    margin: 0 1rem;
   }
 }
 
@@ -164,7 +165,7 @@
     color: var(--c11);
     background-color: var(--c1);  
     border: 1px solid var(--c4);
-    padding: .5rem 1rem;
+    padding: .5rem;
     border-radius: .5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
