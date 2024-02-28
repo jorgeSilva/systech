@@ -225,6 +225,42 @@
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
+
+  .home__social__medias__content a{
+    cursor: pointer;
+    animation-duration: 3.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+    background: var(--c3);
+    padding: .5rem ;
+    background: linear-gradient(to right, var(--c9) 8%, var(--c10) 18%, #F6F6F6 33%);
+    background-size: 1200px 100%;
+    border-radius: .5rem;
+    border: none;
+    color: var(--p5);
+    fill: var(--p5);
+    transition: .3s ease;
+  }
+
+  .saiba__text__cliente:hover{
+    cursor: none;
+    animation-duration: none;
+    animation-fill-mode: none;
+    animation-iteration-count: none;
+    animation-name: none;
+    animation-timing-function: none;
+    background: none;
+    padding: 0;
+    background: none;
+    background-size: none;
+    border-radius: none;
+    border: none;
+    color: var(--p5);
+    fill: var(--p5);
+    transition: .3s ease;   
+  }
 }
 
 @media (max-width: 550px) {
