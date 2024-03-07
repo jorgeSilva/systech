@@ -16,7 +16,7 @@ function Home() {
   return (
     <main className={style.home__container__main}>
       <section className={style.home__content__main}>
-        <h1 className={style.home__h1}>Desenvolvimento de software para potencializar seu negocio.</h1>
+        <h1 className={style.home__h1}>Desenvolvimento de software para potencializar seu negócio.</h1>
         <h3 className={style.home__h3}>Transformando ideias em soluções.</h3>
 
         <figure className={style.home__container__blob__main}>

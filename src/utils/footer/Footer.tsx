@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className={style.footer__container}>
       <section className={style.footer__content}>
         <div className={style.footer__list__container}>
-          <h1 className={style.footer__h1}> <span>01/</span> Paginas do site</h1>
+          <h1 className={style.footer__h1}> <span>01/</span> Paginas do síte</h1>
 
           <ul>
             <li>
@@ -33,10 +33,10 @@ const Footer = () => {
         </div>
 
         <div className={style.footer__list__container}>
-          <h1 className={style.footer__h1}> <span>03/</span> Projetos atuais</h1>
+          <h1 className={style.footer__h1}> <span>03/</span> Projetos Atuais</h1>
           <ul>
             <li className={style.li}>
-              <a href="https://assistencia-social.vercel.app/">Assistencia Social</a>
+              <a href="https://assistencia-social.vercel.app/">Assistência Social</a>
               <div>
                 <span>05/01/2024</span>
                 -
@@ -45,7 +45,7 @@ const Footer = () => {
             </li>
 
             <li className={style.li}>
-              <a href="https://secretaria-almoxarifado.vercel.app/">Secretaria Almoxarifado</a>
+              <a href="https://secretaria-almoxarifado.vercel.app/">Almoxarifado</a>
               <div>
                 <span>05/06/2023</span>
                 -
@@ -54,7 +54,7 @@ const Footer = () => {
             </li>
 
             <li className={style.li}>
-              <a href="https://projeto-pesquisa-dun.vercel.app/">Projeto pesquisa</a>
+              <a href="https://projeto-pesquisa-dun.vercel.app/">Pesquisa Eleitoral</a>
               <div>
                 <span>20/07/2023</span>
                 -
@@ -63,7 +63,7 @@ const Footer = () => {
             </li>
 
             <li className={style.li}>
-              <a href="https://projeto-educacao-acao.vercel.app/">Educação na palma da mão</a>
+              <a href="https://projeto-educacao-acao.vercel.app/">Educação na Palma da Mão</a>
               <div>
                 <span>27/09/2023</span>
                 -

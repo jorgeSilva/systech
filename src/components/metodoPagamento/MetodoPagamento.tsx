@@ -56,8 +56,8 @@ const MetodoPagamento = () => {
   return (
     <main className={style.pagamento__container__main}>
       <section className={style.pagamento__content__main}>
-        <h1 className={style.pagamento__h1}>Solicite um orçamento para sua idea revolucionaria<b>.</b></h1>
-        <h3 className={style.pagamento__h3}>Um email descrevendo seu proposito e retornaremos com valores e prazos.</h3>
+        <h1 className={style.pagamento__h1}>Solicite um orçamento para sua ideia revolucionária<b>.</b></h1>
+        <h3 className={style.pagamento__h3}>Basta um email descrevendo seu propósito e retornaremos com valores e prazos.</h3>
 
         <h2 className={style.pagamento__h2}>Seu futuro digital começa aqui.</h2>
 

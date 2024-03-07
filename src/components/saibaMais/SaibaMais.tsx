@@ -44,8 +44,8 @@ const SaibaMais = () => {
     <section className={style.saiba__container}>
       <section className={`${style.saiba__content__card} ${style.fade__left}`}>
         <div className={style.saiba__card__left}>
-          <h2 className={style.saiba__title}>"<span>Assistencia Social System</span>"</h2>
-          <h1 className={style.saiba__conteudo}>Sistema designado ao cadastro de familias referentes ao programa da assistencia social<b>.</b></h1>
+          <h2 className={style.saiba__title}>"<span>Assistência Social System</span>"</h2>
+          <h1 className={style.saiba__conteudo}>Sistema designado ao cadastro de famílias referentes à "Programas da Assistência Social"<b>.</b></h1>
           <a href='/' className={style.saiba__text__cliente}>Torne-se nosso cliente entrando em contato através. <img src={whatsapp} className={style.saiba__img__whatsapp} alt="Icone whatsapp"/></a>
         </div>
 
@@ -58,9 +58,9 @@ const SaibaMais = () => {
 
       <section className={`${style.saiba__content__card} ${style.fade__right}`}>
         <div className={style.saiba__card__left__conteudo}>
-          <h2 className={style.saiba__title}>"<span>Educação na palma da mão</span>"</h2>
+          <h2 className={style.saiba__title}>"<span>Educação na Palma da Mão</span>"</h2>
           <h1 className={style.saiba__conteudo}>
-            Designado à secretária de educação do municipio com intuito de um melhor controle de seus funcionarios<b>.</b>
+            Designado à "Secretária Municipal de Educação" com intuito de um melhor controle de seus funcionarios<b>.</b>
           </h1>
           <a href='/' className={style.saiba__text__cliente}>Torne-se nosso cliente entrando em contato através. <img src={whatsapp} className={style.saiba__img__whatsapp} alt="Icone whatsapp"/></a>
         </div>
@@ -72,9 +72,9 @@ const SaibaMais = () => {
 
       <section ref={terceiro_elemento} className={`${style.saiba__content__card}`}>
         <div className={style.saiba__card__left}>
-          <h2 className={style.saiba__title}>"<span>Campanha Pesquisa</span>"</h2>
+          <h2 className={style.saiba__title}>"<span>Pesquisa Eleitoral</span>"</h2>
           <h1 className={style.saiba__conteudo}>
-          Site onde o comprador irá inserir as perguntas e a partir disso fazer entrevistas, gerando relatorios referentes as respostas induzidas ou expontaneas<b>.</b>
+          Síte onde o comprador irá inserir as perguntas e a partir delas realizar entrevistas, gerando relatórios referentes as respostas induzidas ou espontâneas<b>.</b>
           </h1>
           <a href='/' className={style.saiba__text__cliente}>Torne-se nosso cliente entrando em contato através. <img src={whatsapp} className={style.saiba__img__whatsapp} alt="Icone whatsapp"/></a>
         </div>
@@ -88,9 +88,9 @@ const SaibaMais = () => {
 
       <section ref={quarto_elemento} className={`${style.saiba__content__card}`}>
         <div className={style.saiba__card__left__conteudo}>
-          <h2 className={style.saiba__title}>"<span>Secretaria Almoxarifado</span>"</h2>
+          <h2 className={style.saiba__title}>"<span>Almoxarifado</span>"</h2>
           <h1 className={style.saiba__conteudo}>
-            Voltado para as escolas do municipio onde é solicitado pelas merendeiras os alimentos para semana na escola<b>.</b>
+            Sistema de controle de estoque de gêneros alimentícios do almoxarifado municipal em parcerias com as merendeiras<b>.</b>
           </h1>
           <a href='/' className={style.saiba__text__cliente}>Torne-se nosso cliente entrando em contato através. <img src={whatsapp} className={style.saiba__img__whatsapp} alt="Icone whatsapp"/></a>
         </div>
