@@ -60,7 +60,7 @@ const SaibaMais = () => {
         <div className={style.saiba__card__left__conteudo}>
           <h2 className={style.saiba__title}>"<span>Educação na Palma da Mão</span>"</h2>
           <h1 className={style.saiba__conteudo}>
-            Designado à "Secretaria Municipal de Educação" com intuito de um melhor controle de seus funcionarios<b>.</b>
+            Designado à "Secretaria Municipal de Educação" com intuito de um melhor controle de seus funcionários<b>.</b>
           </h1>
           <a href='/' className={style.saiba__text__cliente}>Torne-se nosso cliente entrando em contato através. <img src={whatsapp} className={style.saiba__img__whatsapp} alt="Icone whatsapp"/></a>
         </div>
@@ -74,7 +74,7 @@ const SaibaMais = () => {
         <div className={style.saiba__card__left}>
           <h2 className={style.saiba__title}>"<span>Pesquisa Eleitoral</span>"</h2>
           <h1 className={style.saiba__conteudo}>
-          Síte onde o comprador irá inserir as perguntas e a partir delas realizar entrevistas, gerando relatórios referentes as respostas induzidas ou espontâneas<b>.</b>
+            Site onde o comprador irá inserir as perguntas e a partir delas realizar entrevistas, gerando relatórios referentes as respostas induzidas ou espontâneas<b>.</b>
           </h1>
           <a href='/' className={style.saiba__text__cliente}>Torne-se nosso cliente entrando em contato através. <img src={whatsapp} className={style.saiba__img__whatsapp} alt="Icone whatsapp"/></a>
         </div>
@@ -82,7 +82,6 @@ const SaibaMais = () => {
         <div className={style.saiba__card__right}>
           <img className={style.saiba__card__blob} src={blob_3} alt="Background laranja para os despositivos." />
           <img className={style.device11} src={device_3} alt="Imagem dispositivo." />
-
         </div>
       </section>
 

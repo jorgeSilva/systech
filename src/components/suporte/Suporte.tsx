@@ -19,7 +19,7 @@ const Suporte = () => {
       <div className={style.suporte__content__apresentation}>
         <h1 className={style.suporte__title}>Possíveis dúvidas sobre a SysTech Solutions<span style={{color:'var(--p1'}}>.</span></h1>
         <p className={style.suporte__text}>
-          Esclareça toda e qualquer duvida perguntando diretamente ao nosso contato no whatsapp
+          Esclareça toda e qualquer dúvida perguntando diretamente ao nosso contato no whatsapp
           <a href='https://wa.me/5515997886834' className={style.saiba__text__cliente}><img src={wpp} className={style.saiba__img__whatsapp} alt="Icone whatsapp"/>
           </a>
         </p>
@@ -98,8 +98,8 @@ const Suporte = () => {
               </span>
             </span>
             <p className={style.suporte__card__text} id='terceiro'>
-              Jorge Lucas Ferreira Silva, fundador e único membro da "SysTech"<span id='terceiro'>.</span> <br />
-              Com título em "Técnico em Desenvolvimeto de Sistemas" pela Escola Técnica do Estado de São Paulo, "ETEC Dr. Demétrio Azevedo Junior"<span id='terceiro'>.</span>
+              Jorge Lucas Ferreira Silva, fundador e único membro da "SysTech Solution"<span id='terceiro'>.</span> <br />
+              Formado em "Técnico em Desenvolvimeto de Sistemas" pela Escola Técnica do Estado de São Paulo, "ETEC Dr. Demétrio Azevedo Junior"<span id='terceiro'>.</span>
               <span id='terceiro'>.</span>
             </p>
           </div>
