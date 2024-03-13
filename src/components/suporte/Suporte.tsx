@@ -38,7 +38,7 @@ const Suporte = () => {
               </span>
             </span>
             <p className={style.suporte__card__text} id='primeiro'>
-              Plataformas web totalmente responsivas, desenvolvidas em React + TypeScript e node para manipulação do backend e construção de API's<span id='primeiro'>.</span><br/>
+              Plataformas web totalmente responsivas, desenvolvidas em NextJS e node para manipulação do backend e construção de API's<span id='primeiro'>.</span><br/>
               Com informações produzidas pelo sistema, serão todas armazenadas em um banco de dados não relacional com "MongoDB"<span id='primeiro'>.</span><br />
               Hospedados nos servidores da Vercel dando maior velocidade e fluidez para o sistema.
             </p>
