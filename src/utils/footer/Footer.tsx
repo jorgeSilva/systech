@@ -25,9 +25,9 @@ const Footer = () => {
           <h1 className={style.footer__h1}> <span>02/</span> Contatos</h1>
           <ul>
             <li>
-              <a href=""><span><IconWhatsapp/></span> Whatsapp</a>
-              <a href=""><span><IconInstagram/></span> Instagram</a>
-              <a href=""><span><IconEmail/></span> Email</a>
+              <a href="https://wa.me/5515997886834"><span><IconWhatsapp/></span> Whatsapp</a>
+              <a href="https://www.instagram.com/_systech/"><span><IconInstagram/></span> Instagram</a>
+              <a href="/metodo-pagamento"><span><IconEmail/></span> Email</a>
             </li>
           </ul>
         </div>

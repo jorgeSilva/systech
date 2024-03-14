@@ -11,16 +11,16 @@ import SaibaMais from './components/saibaMais/SaibaMais';
 function App() {
   return (
     <>
-      <Navbar/>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/saiba-mais" element={<SaibaMais/>}/>
-          <Route path="/suporte" element={<Suporte/>}/>
-          <Route path="/metodo-pagamento" element={<MetodoPagamento/>}/>
-        </Routes>
+        <Navbar/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/saiba-mais" element={<SaibaMais/>}/>
+            <Route path="/suporte" element={<Suporte/>}/>
+            <Route path="/metodo-pagamento" element={<MetodoPagamento/>}/>
+          </Routes>
+        <Footer/>
       </BrowserRouter>
-      <Footer/>
     </>
   );
 }

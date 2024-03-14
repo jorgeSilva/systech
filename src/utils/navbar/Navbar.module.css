@@ -59,14 +59,14 @@
   height: 36px;
 }
 
-.navbar__nav ul a{
+.navbar__nav__button{
   text-decoration: none;
   color: var(--c10);
   position: relative;
   transition: .3s ease;
 }
 
-.navbar__nav ul a::after{
+.navbar__nav__button::after{
   content: "";
   height: 2px;
   width: 100%;
@@ -78,7 +78,7 @@
   transition: .3s ease;
 }
 
-.navbar__nav ul a:hover{
+.navbar__nav__button:hover{
   text-decoration: none;
   color: var(--c11);
   background-color: var(--c1);  
@@ -89,21 +89,7 @@
 
 }
 
-.navbar__nav ul a:hover::after{
-  content: initial;
-}
-
-.navbar__nav__active{
-  text-decoration: none;
-  color: var(--c11);
-  background-color: var(--c1);  
-  border: 1px solid var(--c4);
-  padding: .5rem 1rem;
-  border-radius: .5rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.navbar__nav__active::after{
+.navbar__nav__button:hover::after{
   content: initial;
 }
 
@@ -165,9 +151,21 @@
     color: var(--c11);
     background-color: var(--c1);  
     border: 1px solid var(--c4);
-    padding: .5rem;
+    padding: .5rem 1rem;
     border-radius: .5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .navbar__nav ul a:hover{
+    
+  }
+
+  .navbar__nav ul a::after{
+    content: none;
+  }
+  
+  .navbar__nav ul a:hover::after{
+    content: none;
   }
 }
 

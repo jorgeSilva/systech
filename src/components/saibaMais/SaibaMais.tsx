@@ -11,17 +11,12 @@ import device_4 from '../../assets/saibaMais/Device 4-1.png'
 import whatsapp from '../../assets/Icon/whatsapp.svg'
 
 const SaibaMais = () => {
-
   const terceiro_elemento = React.useRef<HTMLElement | null>(null)
   const quarto_elemento = React.useRef<HTMLElement | null>(null)
 
   document.addEventListener('scroll', () => {
     let valor_terceiro = terceiro_elemento.current?.scrollHeight
     let valor_quarto = quarto_elemento.current?.scrollHeight
-
-    console.log(valor_quarto);
-    console.log(valor_terceiro);
-    
 
     if(valor_terceiro){
       let meio_valor = valor_terceiro / 2

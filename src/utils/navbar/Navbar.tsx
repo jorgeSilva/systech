@@ -1,39 +1,37 @@
 import React from 'react'
 import style from  './Navbar.module.css'
 import systech from '../../assets/home/SysTech.png'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-  const [valueScroll, setValueScroll] = React.useState<number>(0)
   const navbar__content__relative = React.useRef<HTMLDivElement | null>(null)
   const navbar__content = React.useRef<HTMLDivElement | null>(null)
   const navbar__content__fixed = React.useRef<HTMLDivElement | null>(null)
 
-  // function verificarScroll() {
-  //   const scrollAtual: number = document.documentElement.scrollTop;
-    
-  //   if (scrollAtual > valueScroll) {
-  //     // console.log('aumentou');
-  //     navbar__content__relative.current?.classList.add('nav-active-relative')
-  //     navbar__content.current?.classList.add('nav-active')
-  //     navbar__content__fixed.current?.classList.add('nav-active-fixed')
-  //   } else if (scrollAtual <= 1.6) {
-  //     navbar__content__relative.current?.classList.remove('nav-active-relative')
-  //     navbar__content.current?.classList.remove('nav-active')
-  //     navbar__content__fixed.current?.classList.remove('nav-active-fixed')      
-  //   }
+  const homeRef = React.useRef<HTMLAnchorElement | null>(null)
+  const saibaRef = React.useRef<HTMLAnchorElement | null>(null)
+  const orcamentoRef = React.useRef<HTMLAnchorElement | null>(null)
+  const suporteRef = React.useRef<HTMLAnchorElement | null>(null)
 
-  //   setValueScroll(scrollAtual)
-  // }
-
-  // window.addEventListener('scroll', () => {});
-
-  const url = document.documentElement.baseURI
-  const split_URL = url.split("/").slice(-1)
-  const [link, setLink] = React.useState<string | null>(null)
-
-  React.useEffect(() => {
-    setLink(String(split_URL))
-  }, [split_URL])
+  const click = (e:any) => {            
+    if(e.target.pathname === saibaRef.current?.pathname){
+      orcamentoRef.current?.classList.remove("navbar__nav__active")
+      suporteRef.current?.classList.remove("navbar__nav__active")
+      saibaRef.current?.classList.add("navbar__nav__active")
+    }else if(e.target.pathname === orcamentoRef.current?.pathname){
+      saibaRef.current?.classList.remove("navbar__nav__active")
+      orcamentoRef.current?.classList.add("navbar__nav__active")
+      suporteRef.current?.classList.remove("navbar__nav__active")
+    }else if(e.target.pathname === suporteRef.current?.pathname){
+      saibaRef.current?.classList.remove("navbar__nav__active")
+      orcamentoRef.current?.classList.remove("navbar__nav__active")
+      suporteRef.current?.classList.add("navbar__nav__active")
+    }else if(e.target.baseURI === homeRef.current?.baseURI){
+      saibaRef.current?.classList.remove("navbar__nav__active")
+      orcamentoRef.current?.classList.remove("navbar__nav__active")
+      suporteRef.current?.classList.remove("navbar__nav__active")
+    }
+  }
 
   function handleContato(){
     window.location.href = "https://wa.me/5515997886834"
@@ -45,39 +43,14 @@ const Navbar = () => {
         <div ref={navbar__content__fixed} className={style.navbar__content__fixed}>
           <div ref={navbar__content} className={style.navbar__content}>
             <figure className={style.navbar__figure__Icon}>
-              <a href="/">
-                <img src={systech} alt='Logo "SysTech"' className={style.navbar__icon}/>
-              </a>
+              <Link ref={homeRef} onClick={click} to="/"><img src={systech} alt='Logo "SysTech"' className={style.navbar__icon}/></Link>
             </figure>
 
             <nav className={style.navbar__nav}>
               <ul>
-                <li>
-                  {
-                    link === "saiba-mais" ?
-                    <a href="/saiba-mais" className={style.navbar__nav__active} >Saiba mais</a>
-                    :
-                    <a href="/saiba-mais" >Saiba mais</a>
-                  }
-                </li>
-                <li>
-                  {
-                    link === "metodo-pagamento" ?
-                    <a href="/metodo-pagamento" className={style.navbar__nav__active}>
-                      Orçamento
-                    </a>
-                    :
-                    <a href="/metodo-pagamento">Orçamento</a>
-                  }
-                </li>
-                <li>
-                  {
-                    link === "suporte" ?
-                    <a href="/suporte" className={style.navbar__nav__active}>Suporte</a>
-                    :
-                    <a href="/suporte">Suporte</a>
-                  }
-                </li>
+                <li><Link ref={saibaRef} onClick={click} className={style.navbar__nav__button} to="/saiba-mais">Saiba mais</Link></li>
+                <li><Link ref={orcamentoRef} onClick={click} className={style.navbar__nav__button} to="/metodo-pagamento">Orçamento</Link></li>
+                <li><Link ref={suporteRef} onClick={click} className={style.navbar__nav__button} to="/suporte">Suporte</Link></li>
               </ul>
             </nav>
             

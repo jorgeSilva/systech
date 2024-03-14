@@ -10,17 +10,6 @@
   font-family: 'Inter', sans-serif;
   font-family: 'Lato', sans-serif;
 */
-/* 
-.nav-active{
-  background-color: aquamarine;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: initial;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
 
 .nav-active-fixed{
   position: fixed;
@@ -36,6 +25,24 @@
 
 .nav-active{
   grid-column: 2 / 12;
+}
+
+.navbar__nav__active{
+  text-decoration: none;
+  color: var(--c11);
+  background-color: var(--c1);  
+  border: 1px solid var(--c4);
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbar__nav__active::after{
+  content: none !important;
+}
+
+.navbar__nav__active:hover::after{
+  content: none;
 }
 
 html {
