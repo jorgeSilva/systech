@@ -1,9 +1,9 @@
 import React from 'react'
 import style from './Footer.module.css'
 import systech from '../../assets/footer/certoagora.png'
-import insta from '../../assets/Icon/instagram.svg'
-import email from '../../assets/footer/Email.svg'
-import whatsapp from '../../assets/Icon/whatsapp.svg'
+import IconWhatsapp from '../Icons/whatsapp-icon'
+import IconInstagram from '../Icons/instagram-icon'
+import IconEmail from '../Icons/email-icon'
 
 const Footer = () => {
   return (
@@ -25,9 +25,9 @@ const Footer = () => {
           <h1 className={style.footer__h1}> <span>02/</span> Contatos</h1>
           <ul>
             <li>
-              <a href=""><span><img src={whatsapp} alt="Icone whatsapp" /></span> Whatsapp</a>
-              <a href=""><span><img src={insta} alt="Icone instagram" /></span> Instagram</a>
-              <a href=""><span><img src={email} alt="Icone email" /></span> Email</a>
+              <a href=""><span><IconWhatsapp/></span> Whatsapp</a>
+              <a href=""><span><IconInstagram/></span> Instagram</a>
+              <a href=""><span><IconEmail/></span> Email</a>
             </li>
           </ul>
         </div>

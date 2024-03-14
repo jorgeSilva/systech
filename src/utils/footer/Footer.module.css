@@ -54,7 +54,7 @@ ul li div {
   text-transform: capitalize;
 }
 
-ul li a span img {
+ul li a span svg {
   width: 1rem;
   height: 1rem;
   color: var(--c4);
