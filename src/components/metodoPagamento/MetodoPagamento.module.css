@@ -358,3 +358,9 @@
     line-height: 1.75rem;
   }
 }
+
+@media (max-width: 417px) {  
+  .pagamento__container__main{
+    margin-top: 4rem;
+  }
+}

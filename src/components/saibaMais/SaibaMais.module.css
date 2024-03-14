@@ -447,6 +447,12 @@
   }
 }
 
+@media (max-width: 417px ) {
+  .saiba__container{
+    margin-top: 4rem;
+  }
+}
+
 @media (max-width: 410px ) {
   .saiba__title{
     font-size: .8rem;
