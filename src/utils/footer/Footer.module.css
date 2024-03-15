@@ -57,8 +57,8 @@ ul li div {
 ul li a span svg {
   width: 1rem;
   height: 1rem;
-  color: var(--c4);
-  fill: var(--c4);
+  color: var(--c8);
+  fill: var(--c8);
   transition: .3s ease;
   text-decoration: none;
   margin: 0 .5rem;
