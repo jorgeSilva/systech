@@ -1,6 +1,6 @@
 import React from 'react'
 import style from  './Navbar.module.css'
-import systech from '../../assets/home/SysTech.png'
+import systech from '../../assets/home/SysTech-min.png'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {

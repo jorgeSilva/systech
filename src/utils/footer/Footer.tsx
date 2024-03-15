@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Footer.module.css'
-import systech from '../../assets/footer/certoagora.png'
+import systech from '../../assets/home/SysTech-min.png'
 import IconWhatsapp from '../Icons/whatsapp-icon'
 import IconInstagram from '../Icons/instagram-icon'
 import IconEmail from '../Icons/email-icon'

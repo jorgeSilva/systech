@@ -1,13 +1,13 @@
 import React from 'react'
 import style from './SaibaMais.module.css'
 import blob from '../../assets/saibaMais/blob 1.svg'
-import blob_device from '../../assets/saibaMais/Device blub 2.png'
+import blob_device from '../../assets/saibaMais/Device blub 2-min.png'
 import blob_3 from '../../assets/saibaMais/blob 3.svg'
 import blob_4 from '../../assets/saibaMais/blob 4.svg'
-import device_1_1 from '../../assets/saibaMais/Device 1-1.png'
-import device_1_2 from '../../assets/saibaMais/Device 1-2.png'
-import device_3 from '../../assets/saibaMais/Device 3-1.png'
-import device_4 from '../../assets/saibaMais/Device 4-1.png'
+import device_1_1 from '../../assets/saibaMais/Device 1-1-min.png'
+import device_1_2 from '../../assets/saibaMais/Device 1-2-min.png'
+import device_3 from '../../assets/saibaMais/Device 3-1-min.png'
+import device_4 from '../../assets/saibaMais/Device 4-1-min.png'
 import whatsapp from '../../assets/Icon/whatsapp.svg'
 
 const SaibaMais = () => {
